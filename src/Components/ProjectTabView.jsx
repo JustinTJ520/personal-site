@@ -1,4 +1,4 @@
-import { useState } from "react";
+﻿import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import BrickBreakerVideo from "./BrickBreakerVideo";
 
@@ -10,7 +10,7 @@ const ProjectTabView = () => {
       case "movierec":
         return (
           <div>
-            <h2>Movie Recommendation Program</h2>
+            <h2>🎞️Movie Recommendation Program🎞️</h2>
             <p>
               A command-line application using the MovieLens dataset to
               recommend films based on user ratings and metadata (e.g., genre,
@@ -36,7 +36,7 @@ const ProjectTabView = () => {
       case "webscraper":
         return (
           <div>
-            <h2>Car Auction Website Scraper</h2>
+            <h2>🚗Car Auction Website Scraper🚗</h2>
             <p>
               Python-based web scraper that extracts make, model, year, and sale
               prices from popular auction websites (Cars and Bids, Bring a
@@ -53,7 +53,7 @@ const ProjectTabView = () => {
       case "brickbreaker":
         return (
           <div>
-            <h2>Brick Breaker Game</h2>
+            <h2>🕹️Brick Breaker Game🕹️</h2>
             <p>
               A Brick Breaker game made using OpenGL. Has several levels,
               particle effects, and textures.
