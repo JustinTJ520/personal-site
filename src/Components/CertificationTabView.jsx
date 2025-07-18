@@ -8,19 +8,13 @@ const CertificationTabView = () => {
     switch (activeTab) {
       case "itil":
         return (
-          <embed
-            src="media/ITILCert.pdf"
-            width="100%"
-            height="1200px"
-            id="itil"
-          />
+          <embed src="media/ITILCert.pdf" className="pdf-embed" id="itil" />
         );
       case "lpilinux":
         return (
           <embed
             src="media/LinuxCert.pdf"
-            width="100%"
-            height="1200px"
+            className="pdf-embed"
             id="lpilinux"
           />
         );
@@ -28,19 +22,13 @@ const CertificationTabView = () => {
         return (
           <embed
             src="media/CiscoCert.pdf"
-            width="100%"
-            height="1200px"
+            className="pdf-embed"
             id="ciscocybersecurity"
           />
         );
       default:
         return (
-          <embed
-            src="media/ITILCert.pdf"
-            width="100%"
-            height="1200px"
-            id="itil"
-          />
+          <embed src="media/ITILCert.pdf" className="pdf-embed" id="itil" />
         );
     }
   };

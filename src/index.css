@@ -1,17 +1,25 @@
-
+* {
+  box-sizing: border-box;
+}
 
 :root {
   margin: auto;
-  width: 80%;
+  max-width: 1200px;
   padding: 10px;
   background-color: rgb(39, 35, 35);
   color: white;
-  font-family: 'Fira Code';
+  font-family: "Fira Code";
+}
+
+body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    color: mediumpurple;
-    text-shadow: 1px 1px 2px purple;
+  color: mediumpurple;
+  text-shadow: 1px 1px 2px purple;
 }
 
 a:hover {
@@ -54,110 +62,170 @@ a:hover {
 }
 
 .video-container {
-  max-width: 500px;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
   margin: 0;
   margin: auto;
 }
 
+.pdf-embed {
+  width: 100%;
+  height: 80vh;
+  max-width: 100%;
+  border: none;
+}
+
 h1 {
-    display: flex;
-    justify-content: center;
-    text-shadow: 4px 4px 8px purple;
+  display: flex;
+  justify-content: center;
+  text-shadow: 4px 4px 8px purple;
 }
 
 h2 {
-    text-shadow: 4px 4px 8px purple;
+  text-shadow: 4px 4px 8px purple;
 }
 
 #about {
-    border: outset;
-    border-width: thick medium medium thick;
-    border-radius: 100px;
-    box-shadow: -5px -5px 15px purple;
-    padding: 25px 100px;
-    text-align: center;
-    border-color: purple;
+  border: outset;
+  border-width: thick medium medium thick;
+  border-radius: 100px;
+  box-shadow: -5px -5px 15px purple;
+  padding: 25px 100px;
+  text-align: center;
+  border-color: purple;
 }
 
 #projects {
-    border: outset;
-    border-width: thick medium medium thick;
-    border-radius: 100px;
-    box-shadow: -5px -5px 15px purple;
-    padding: 25px 100px;
-    text-align: center;
-    border-color: purple;
+  border: outset;
+  border-width: thick medium medium thick;
+  border-radius: 100px;
+  box-shadow: -5px -5px 15px purple;
+  padding: 25px 100px;
+  text-align: center;
+  border-color: purple;
 }
 
 #skills {
-    border: outset;
-    border-width: thick medium medium thick;
-    border-radius: 100px;
-    box-shadow: -5px -5px 15px purple;
-    padding: 25px 100px;
-    text-align: center;
-    border-color: purple;
+  border: outset;
+  border-width: thick medium medium thick;
+  border-radius: 100px;
+  box-shadow: -5px -5px 15px purple;
+  padding: 25px 100px;
+  text-align: center;
+  border-color: purple;
 }
 
 #certifications {
-    border: outset;
-    border-width: thick medium medium thick;
-    border-radius: 100px;
-    box-shadow: -5px -5px 15px purple;
-    padding: 25px 100px;
-    text-align: center;
-    border-color: purple;
+  border: outset;
+  border-width: thick medium medium thick;
+  border-radius: 100px;
+  box-shadow: -5px -5px 15px purple;
+  padding: 25px 100px;
+  text-align: center;
+  border-color: purple;
 }
 
 #contact {
-    border: outset;
-    border-width: thick medium medium thick;
-    border-radius: 100px;
-    box-shadow: -5px -5px 15px purple;
-    padding: 25px 100px;
-    text-align: center;
-    border-color: purple;
+  border: outset;
+  border-width: thick medium medium thick;
+  border-radius: 100px;
+  box-shadow: -5px -5px 15px purple;
+  padding: 25px 100px;
+  text-align: center;
+  border-color: purple;
 }
 
-#skill-scontainer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    overflow-x: auto;
-    padding: 1rem;
-    flex-wrap: nowrap;
+#skills-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  overflow-x: auto;
+  padding: 1rem;
+  flex-wrap: wrap;
 }
 
 .skill-box {
-    min-width: 220px;
-    flex: 0 0 auto;
-    border: 2px solid purple;
-    border-radius: 12px;
-    padding: 1rem;
-    background-color: #2e2b2b;
-    box-shadow: 0 4px 8px rgba(128, 0, 128, 0.4);
-    transition: transform 0.2s, box-shadow 0.2s;
-    text-align: left;
+  min-width: 220px;
+  max-width: 100%;
+  flex: 1 1 250px;
+  border: 2px solid purple;
+  border-radius: 12px;
+  padding: 1rem;
+  background-color: #2e2b2b;
+  box-shadow: 0 4px 8px rgba(128, 0, 128, 0.4);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
 }
 
-    .skill-box:hover {
-        transform: scale(1.02);
-        box-shadow: 0 6px 12px rgba(128, 0, 128, 0.6);
-    }
+.skill-box:hover {
+  transform: scale(1.02);
+  box-shadow: 0 6px 12px rgba(128, 0, 128, 0.6);
+}
 
-    .skill-box h3 {
-        margin-bottom: 0.5rem;
-        color: mediumpurple;
-        text-shadow: 2px 2px 6px purple;
-    }
+.skill-box h3 {
+  margin-bottom: 0.5rem;
+  color: mediumpurple;
+  text-shadow: 2px 2px 6px purple;
+}
 
-    .skill-box ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
+.skill-box ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
-    .skill-box li {
-        margin-bottom: 6px;
-        text-align: left;
-    }
+.skill-box li {
+  margin-bottom: 6px;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  :root {
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .tab-nav {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+    word-wrap: break-word;
+  }
+
+  .tab-nav button {
+    width: 100%;
+    max-width: 300px;
+    word-wrap: break-word;
+  }
+
+  .pdf-embed {
+    height: 60vh;
+  }
+
+  #skills-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .skill-box {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+
+  #about,
+  #projects,
+  #skills,
+  #certifications,
+  #contact {
+    padding: 20px;
+    border-radius: 40px;
+  }
+}
